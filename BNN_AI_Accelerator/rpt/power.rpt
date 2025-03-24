@@ -1,0 +1,53 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top_pad
+Version: L-2016.03-SP1
+Date   : Fri Dec 27 19:28:49 2024
+****************************************
+
+
+Library(s) Used:
+
+    scc018ug_uhd_rvt_ss_v1p62_125c_basic (File: /mnt/f/WSL/lib/std/SCC018UG_UHD_RVT_V0.4a/liberty/1.8v/scc018ug_uhd_rvt_ss_v1p62_125c_basic.db)
+    SP018WP_V1p1_max (File: /mnt/f/WSL/lib/io/SP018WP_V1p1/syn/3p3v/SP018WP_V1p1_max.db)
+
+
+Operating Conditions: ss_v1p62_125c   Library: scc018ug_uhd_rvt_ss_v1p62_125c_basic
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =  10.4827 mW   (98%)
+  Net Switching Power  = 245.0788 uW    (2%)
+                         ---------
+Total Dynamic Power    =  10.7277 mW  (100%)
+
+Cell Leakage Power     =   5.1508 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             1.6979        6.6683e-02            0.6199            1.7652  (  16.45%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.9091        6.2415e-02            0.1096            0.9717  (   9.05%)
+register           7.6970        3.1277e-02            3.1829            7.7314  (  72.03%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1787        8.4703e-02            1.2384            0.2647  (   2.47%)
+--------------------------------------------------------------------------------------------------
+Total             10.4827 mW         0.2451 mW         5.1508 uW        10.7329 mW
+1

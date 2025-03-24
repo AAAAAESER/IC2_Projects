@@ -1,0 +1,12 @@
+./rtl/adder_reg/conv.v
+./rtl/conv_single_slide.v
+./rtl/conv_slide.v
+./rtl/adder_reg/conv_top.v
+./rtl/conv_final.v
+./rtl/top.v
+./rtl/top_tb_weight.v
+./rtl/pool_top.sv
+./rtl/pooling_channel.sv
+./rtl/pooling_layer.sv
+./rtl/storage_layer.sv
+./rtl/compare_probabilities.sv

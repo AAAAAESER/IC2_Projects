@@ -1,0 +1,237 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : top_pad
+Version: L-2016.03-SP1
+Date   : Fri Dec 27 19:28:48 2024
+****************************************
+
+
+    Net: data_in_pad[0]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[1]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[2]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[3]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[4]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[5]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[6]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[7]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[8]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[9]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[10]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[11]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[12]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[13]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[14]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_in_pad[15]
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: in_valid_pad
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: mode_pad
+
+    max_fanout           100.00
+  - Fanout               671.00
+  ------------------------------
+    Slack               -571.00  (VIOLATED)
+
+
+    Net: data_out_pad[0]
+
+    Capacitance            5.00
+  - min_capacitance       11.00
+  ------------------------------
+    Slack                 -6.00  (VIOLATED)
+
+
+    Net: data_out_pad[1]
+
+    Capacitance            5.00
+  - min_capacitance       11.00
+  ------------------------------
+    Slack                 -6.00  (VIOLATED)
+
+
+    Net: in_ready_pad
+
+    Capacitance            5.00
+  - min_capacitance       11.00
+  ------------------------------
+    Slack                 -6.00  (VIOLATED)
+
+
+    Net: out_en_pad
+
+    Capacitance            5.00
+  - min_capacitance       11.00
+  ------------------------------
+    Slack                 -6.00  (VIOLATED)
+
+
+    Net: clk (dont_touch)
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+    Net: rst_n (dont_touch)
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+    Net: u_top_u_data/n1464 (dont_touch)
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+    Net: u_top_u_pool_top_storage_inst_N52 (dont_touch)
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+    Design: top_pad
+
+    max_area               0.00
+  - Current Area       450433.00
+  ------------------------------
+    Slack              -450433.00  (VIOLATED)
+
+
+    Design: top_pad
+
+    max_leakage_power          0.00
+  - Current Leakage Power      5.88
+  ----------------------------------
+    Slack                     -5.88  (VIOLATED)
+
+
+1

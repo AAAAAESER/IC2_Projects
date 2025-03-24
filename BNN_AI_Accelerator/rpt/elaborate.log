@@ -1,0 +1,259 @@
+Loading db file '/usr/synopsys/syn/L-2016.03-SP1/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/L-2016.03-SP1/libraries/syn/standard.sldb'
+  Loading link library 'scc018ug_uhd_rvt_ss_v1p62_125c_basic'
+  Loading link library 'SP018WP_V1p1_max'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'top_pad'.
+Information: Building the design 'top'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'data'. (HDL-193)
+
+Statistics for case statements in always block at line 162 in file
+	'./rtl/conv_final.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           163            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine data line 44 in file
+		'./rtl/conv_final.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| conv_weight_buffer_reg | Flip-flop |  96   |  Y  | N  | N  | N  | N  | N  | N  |
+|    weight_count_reg    | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_buffer_reg    | Flip-flop |  960  |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine data line 70 in file
+		'./rtl/conv_final.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_buffer_reg   | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|      flag1_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      flag2_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_count_reg    | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+| conv_data_pass_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine data line 154 in file
+		'./rtl/conv_final.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      flag3_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'conv_top' instantiated from design 'top' with
+	the parameters "CONV_DATA_WIDTH=1,FC_DATA_WIDTH=5,K=4,LOGK=4,CH_NUM=6". (HDL-193)
+
+Statistics for case statements in always block at line 88 in file
+	'./rtl/adder_reg/conv_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            89            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 109 in file
+	'./rtl/adder_reg/conv_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           110            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 151 in file
+	'./rtl/adder_reg/conv_top.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           152            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6 line 48 in file
+		'./rtl/adder_reg/conv_top.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|  out_fc_valid_rrr_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| out_conv_valid_rr_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  out_fc_valid_rr_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| out_conv_valid_rrr_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6 line 73 in file
+		'./rtl/adder_reg/conv_top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    delay_cnt_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    conv_cnt_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     fc_cnt_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'conv_slide' instantiated from design 'top' with
+	the parameters "CH_NUM=6,DATA_WIDTH=5,K=3,LEN=9". (HDL-193)
+Warning:  ./rtl/conv_slide.v:48: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./rtl/conv_slide.v:59: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./rtl/conv_slide.v:68: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./rtl/conv_slide.v:91: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./rtl/conv_slide.v:99: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 45 in file
+	'./rtl/conv_slide.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            46            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 84 in file
+	'./rtl/conv_slide.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            85            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9 line 30 in file
+		'./rtl/conv_slide.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   ovalid_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    cur_state_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|    shift_cnt_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    line_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pool_top'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'compare_probabilities'. (HDL-193)
+Warning:  ./rtl/compare_probabilities.sv:59: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./rtl/compare_probabilities.sv:83: unsigned to signed assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine compare_probabilities line 41 in file
+		'./rtl/compare_probabilities.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sum_r_reg      | Flip-flop |  13   |  Y  | N  | N  | N  | N  | N  | N  |
+|  data_valid_r_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  data_valid_rr_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    data_in_r_reg    | Flip-flop |  54   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine compare_probabilities line 55 in file
+		'./rtl/compare_probabilities.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    max_index_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     max_val_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     max_val_reg     | Flip-flop |  12   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      done_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'conv' instantiated from design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6' with
+	the parameters "DATA_WIDTH=5,K=4,LOGK=4". (HDL-193)
+
+Inferred memory devices in process
+	in routine conv_DATA_WIDTH5_K4_LOGK4 line 28 in file
+		'./rtl/adder_reg/conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_vert_r_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine conv_DATA_WIDTH5_K4_LOGK4 line 38 in file
+		'./rtl/adder_reg/conv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_sum1_r_reg   | Flip-flop |  36   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'conv_single_slide' instantiated from design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9' with
+	the parameters "DATA_WIDTH=5,K=3,LEN=9". (HDL-193)
+
+Inferred memory devices in process
+	in routine conv_single_slide_DATA_WIDTH5_K3_LEN9 line 18 in file
+		'./rtl/conv_single_slide.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  105  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pooling_layer' instantiated from design 'pool_top' with
+	the parameters "NUM_CHANNELS=6,DATA_WIDTH=5,MATRIX_DIM=3". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'storage_layer' instantiated from design 'pool_top' with
+	the parameters "DATA_WIDTH=5,NUM_ELEMENTS=16". (HDL-193)
+Warning:  ./rtl/storage_layer.sv:57: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine storage_layer_DATA_WIDTH5_NUM_ELEMENTS16 line 37 in file
+		'./rtl/storage_layer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     valid_r_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine storage_layer_DATA_WIDTH5_NUM_ELEMENTS16 line 45 in file
+		'./rtl/storage_layer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  memory_5_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|  write_address_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  memory_0_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|  memory_1_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|  memory_2_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|  memory_3_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|  memory_4_reg_reg   | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pooling_channel' instantiated from design 'pooling_layer_NUM_CHANNELS6_DATA_WIDTH5_MATRIX_DIM3' with
+	the parameters "DATA_WIDTH=5,MATRIX_DIM=3". (HDL-193)
+Warning:  ./rtl/pooling_channel.sv:60: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:61: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:63: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:64: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:66: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:67: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:76: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./rtl/pooling_channel.sv:77: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine pooling_channel_DATA_WIDTH5_MATRIX_DIM3 line 69 in file
+		'./rtl/pooling_channel.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    comp_reg_reg     | Flip-flop |  15   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1

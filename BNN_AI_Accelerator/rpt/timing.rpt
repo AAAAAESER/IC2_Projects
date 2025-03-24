@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_pad
+Version: L-2016.03-SP1
+Date   : Fri Dec 27 19:28:48 2024
+****************************************
+
+Operating Conditions: ss_v1p62_125c   Library: scc018ug_uhd_rvt_ss_v1p62_125c_basic
+Wire Load Model Mode: top
+
+  Startpoint: u_top_u_data/flag3_reg_2_
+              (rising edge-triggered flip-flop clocked by clk_pad)
+  Endpoint: u_top_u_conv_top_conv_inst_5__conv_inst_data_vert_r_reg_15__4_
+            (rising edge-triggered flip-flop clocked by clk_pad)
+  Path Group: clk_pad
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_pad (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_top_u_data/flag3_reg_2_/CK (DRQUHDV1)                 0.00       0.00 r
+  u_top_u_data/flag3_reg_2_/Q (DRQUHDV1)                  0.72       0.72 r
+  u_top_u_data/U301/ZN (INUHDV2)                          0.10       0.83 f
+  u_top_u_data/U315/ZN (NOR4UHDV2)                        1.82       2.64 r
+  u_top_u_data/U195/Z (BUFUHDV1)                          0.54       3.18 r
+  u_top_u_data/U550/ZN (NAND2UHDV0P4)                     0.17       3.35 f
+  u_top_u_data/U551/ZN (NAND4UHDV0P7)                     0.20       3.55 r
+  u_top_u_data/U24/ZN (NOR2UHDV0P4)                       0.10       3.65 f
+  u_top_u_data/U554/ZN (NAND4UHDV0P7)                     0.18       3.84 r
+  u_top_u_data/weight5[15] (data)                         0.00       3.84 r
+  U3267/ZN (INUHDV0P4)                                    0.13       3.97 f
+  U2854/ZN (CLKNAND2UHDV1)                                0.10       4.07 r
+  U2788/ZN (NAND2UHDV0P4)                                 0.12       4.19 f
+  U3265/ZN (NOR2UHDV0P4)                                  0.20       4.39 r
+  U2805/ZN (CLKNOR2UHDV1)                                 0.13       4.53 f
+  U3856/ZN (NOR2UHDV0P4)                                  0.18       4.70 r
+  U3855/ZN (NOR2UHDV0P4)                                  0.11       4.82 f
+  U6058/ZN (XNOR2UHDV0P4)                                 0.17       4.98 f
+  u_top_u_conv_top_conv_inst_5__conv_inst_data_vert_r_reg_15__4_/D (DQUHDV0P7)
+                                                          0.00       4.98 f
+  data arrival time                                                  4.98
+
+  clock clk_pad (rise edge)                               5.30       5.30
+  clock network delay (ideal)                             0.00       5.30
+  clock reconvergence pessimism                           0.00       5.30
+  clock uncertainty                                      -0.11       5.19
+  u_top_u_conv_top_conv_inst_5__conv_inst_data_vert_r_reg_15__4_/CK (DQUHDV0P7)
+                                                          0.00       5.19 r
+  library setup time                                     -0.21       4.99
+  data required time                                                 4.99
+  --------------------------------------------------------------------------
+  data required time                                                 4.99
+  data arrival time                                                 -4.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

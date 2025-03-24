@@ -1,0 +1,76 @@
+ 
+****************************************
+check_design summary:
+Version:     L-2016.03-SP1
+Date:        Fri Dec 27 19:28:16 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Unconnected ports (LINT-28)                                     6
+    Shorted outputs (LINT-31)                                      30
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                              20
+    Cells do not drive (LINT-1)                                    20
+--------------------------------------------------------------------------------
+
+Warning: In design 'data', cell 'C7703' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7707' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7824' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7831' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7832' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7844' does not drive any nets. (LINT-1)
+Warning: In design 'data', cell 'C7852' does not drive any nets. (LINT-1)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', cell 'C1374' does not drive any nets. (LINT-1)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', cell 'B_16' does not drive any nets. (LINT-1)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'B_20' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'B_21' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'B_22' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'C331' does not drive any nets. (LINT-1)
+Warning: In design 'conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9', cell 'C336' does not drive any nets. (LINT-1)
+Warning: In design 'compare_probabilities', cell 'C388' does not drive any nets. (LINT-1)
+Warning: In design 'compare_probabilities', cell 'C393' does not drive any nets. (LINT-1)
+Warning: In design 'compare_probabilities', cell 'C397' does not drive any nets. (LINT-1)
+Warning: In design 'storage_layer_DATA_WIDTH5_NUM_ELEMENTS16', cell 'C2269' does not drive any nets. (LINT-1)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_5', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_0', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_1', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_2', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_3', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_single_slide_DATA_WIDTH5_K3_LEN9_4', port 'rstn' is not connected to any nets. (LINT-28)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[29]' is connected directly to output port 'fc_data_out[50]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[28]' is connected directly to output port 'fc_data_out[48]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[27]' is connected directly to output port 'fc_data_out[47]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[26]' is connected directly to output port 'fc_data_out[46]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[25]' is connected directly to output port 'fc_data_out[45]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[24]' is connected directly to output port 'fc_data_out[41]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[23]' is connected directly to output port 'fc_data_out[39]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[22]' is connected directly to output port 'fc_data_out[38]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[21]' is connected directly to output port 'fc_data_out[37]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[20]' is connected directly to output port 'fc_data_out[36]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[19]' is connected directly to output port 'fc_data_out[32]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[18]' is connected directly to output port 'fc_data_out[30]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[17]' is connected directly to output port 'fc_data_out[29]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[16]' is connected directly to output port 'fc_data_out[28]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[15]' is connected directly to output port 'fc_data_out[27]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[14]' is connected directly to output port 'fc_data_out[23]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[13]' is connected directly to output port 'fc_data_out[21]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[12]' is connected directly to output port 'fc_data_out[20]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[11]' is connected directly to output port 'fc_data_out[19]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[10]' is connected directly to output port 'fc_data_out[18]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[9]' is connected directly to output port 'fc_data_out[14]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[8]' is connected directly to output port 'fc_data_out[12]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[7]' is connected directly to output port 'fc_data_out[11]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[6]' is connected directly to output port 'fc_data_out[10]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[5]' is connected directly to output port 'fc_data_out[9]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[4]' is connected directly to output port 'fc_data_out[5]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[3]' is connected directly to output port 'fc_data_out[3]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[2]' is connected directly to output port 'fc_data_out[2]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[1]' is connected directly to output port 'fc_data_out[1]'. (LINT-31)
+Warning: In design 'conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6', output port 'conv_data_out[0]' is connected directly to output port 'fc_data_out[0]'. (LINT-31)
+Warning: In design 'top', output port 'in_ready_port' is connected directly to 'logic 1'. (LINT-52)
+1

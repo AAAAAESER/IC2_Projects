@@ -1,0 +1,179 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1908 554 203 129
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/mnt/e/Desktop/IC2/conv/sim_output_pluson.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1576781.250000 1706156.250000
+cursor 1635000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+userMarker 885000 M1 ID_GREEN5 long_dashed
+
+; visible top row signal index
+top 61
+; marker line index
+markerPos 78
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByRising
+
+
+addGroup "G1"
+addGroup "G2"
+activeDirFile "" "/mnt/e/Desktop/IC2/conv/sim_output_pluson.fsdb"
+addSignal -h 15 -2COMP -UDEC /conv_top_tb/uut/conv_inst[0]/conv_inst/data_vert[15:0]
+addSignal -h 15 -2COMP -UDEC -holdScope data_vert[15:0]
+addSignal -h 15 -2COMP -UDEC -holdScope data_mul[15:0]
+addGroup "G3"
+addSignal -h 15 /conv_top_tb/clk
+addSignal -h 15 /conv_top_tb/uut/mode
+addSignal -h 15 -holdScope weight_ready
+addSignal -h 15 -holdScope weight_req
+addSignal -h 15 -holdScope cur_state[2:0]
+addSignal -h 15 -holdScope conv_valid
+addSignal -h 15 -holdScope conv_cnt[6:0]
+addSignal -h 15 -holdScope out_conv_valid
+addSignal -h 15 -holdScope fc_valid
+addSignal -h 15 -holdScope fc_cnt[3:0]
+addSignal -h 15 -holdScope out_fc_valid
+addGroup "conv_inst"
+addSignal -expanded -h 15 -UNSIGNED -HEX /conv_top_tb/uut/conv_inst[0]/conv_inst/idata[95:0]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[95:90]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[89:84]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[83:78]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[77:72]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[71:66]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[65:60]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[59:54]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[53:48]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[47:42]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[41:36]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[35:30]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[29:24]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[23:18]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[17:12]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[11:6]
+addSignal -h 15 -2COMP -UDEC -holdScope idata[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[15:0]
+addSignal -h 15 -2COMP -HEX -holdScope dout[9:0]
+addGroup "G4"
+addSignal -expanded -h 15 -UNSIGNED -HEX /conv_top_tb/fc_data_out[59:0]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[59:50]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[49:40]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[39:30]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[29:20]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[19:10]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out[9:0]
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope fc_data_out_expect[59:0]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[59:50]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[49:40]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[39:30]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[29:20]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[19:10]
+addSignal -h 15 -2COMP -HEX -holdScope fc_data_out_expect[9:0]
+addGroup "G5"
+addSignal -expanded -h 15 -UNSIGNED -HEX /conv_top_tb/fc_data_in[575:0]
+addSignal -h 15 -holdScope fc_data_in[575:480]
+addSignal -h 15 -holdScope fc_data_in[479:384]
+addSignal -h 15 -holdScope fc_data_in[383:288]
+addSignal -h 15 -holdScope fc_data_in[287:192]
+addSignal -h 15 -holdScope fc_data_in[191:96]
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope fc_data_in[95:0]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[95:90]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[89:84]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[83:78]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[77:72]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[71:66]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[65:60]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[59:54]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[53:48]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[47:42]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[41:36]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[35:30]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[29:24]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[23:18]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[17:12]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[11:6]
+addSignal -h 15 -2COMP -UDEC -holdScope fc_data_in[5:0]
+addGroup "G6"
+addSignal -h 15 -UNSIGNED -HEX /conv_top_tb/weight[95:0]
+addGroup "G8"
+addSignal -h 15 /conv_top_tb/conv_data_out[35:0]
+addSignal -h 15 -holdScope conv_data_out_expect[35:0]
+addGroup "G9" -e FALSE
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/mnt/e/Desktop/IC2/conv/sim_output_pluson.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/conv_top_tb"
+"/conv_top_tb/uut"
+
+SCOPE_LIST_BEGIN
+"/conv_top_tb"
+"/conv_top_tb/uut"
+"/conv_top_tb/uut/conv_inst[0]"
+"/conv_top_tb/uut/conv_inst[1]"
+"/conv_top_tb/uut/conv_inst[3]"
+"/conv_top_tb/uut/conv_inst[5]"
+"/conv_top_tb/uut/conv_inst[2]"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
+
+FILTER_SIGNAL_BEGIN
+
+"*"
+
+FILTER_STRING_LIST_BEGIN
+FILTER_STRING_LIST_END
+
+FILTER_TYPE_LIST_BEGIN
+"All"
+"Input"
+"Output"
+"Inout"
+"Net"
+"Register"
+"Buffer"
+"Linkage"
+"ClassTransaction"
+"Property"
+"Others"
+FILTER_TYPE_LIST_END
+
+FILTER_SIGNAL_END

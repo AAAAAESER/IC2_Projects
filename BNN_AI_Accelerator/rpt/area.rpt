@@ -1,0 +1,236 @@
+ 
+****************************************
+Report : area
+Design : top_pad
+Version: L-2016.03-SP1
+Date   : Fri Dec 27 19:28:48 2024
+****************************************
+
+Library(s) Used:
+
+    scc018ug_uhd_rvt_ss_v1p62_125c_basic (File: /mnt/f/WSL/lib/std/SCC018UG_UHD_RVT_V0.4a/liberty/1.8v/scc018ug_uhd_rvt_ss_v1p62_125c_basic.db)
+    SP018WP_V1p1_max (File: /mnt/f/WSL/lib/io/SP018WP_V1p1/syn/3p3v/SP018WP_V1p1_max.db)
+
+Number of ports:                          546
+Number of nets:                          9451
+Number of cells:                         8521
+Number of combinational cells:           5173
+Number of sequential cells:              3226
+Number of macros/black boxes:              24
+Number of buf/inv:                        518
+Number of references:                      75
+
+Combinational area:              67425.255581
+Buf/Inv area:                     2952.230495
+Noncombinational area:          127647.742359
+Macro/Black Box area:           255360.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                450432.997940
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                Local cell area
+                                  --------------------  ------------------------------------ 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-    Black-
+                                  Total        Total    national    national     boxes        Design
+--------------------------------  -----------  -------  ----------  -----------  -----------  --------------------------------------------------------------------------------
+top_pad                           450432.9979    100.0  53349.0057   78479.6533  255360.0000  top_pad
+u_top_u_compare_probabilities_clk_gate_counter_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_compare_probabilities_0
+u_top_u_compare_probabilities_clk_gate_max_index_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_compare_probabilities_2
+u_top_u_compare_probabilities_clk_gate_sum_r_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_compare_probabilities_1
+u_top_u_conv_slide_clk_gate_line_cnt_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9_1
+u_top_u_conv_slide_clk_gate_shift_cnt_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_conv_slide_CH_NUM6_DATA_WIDTH5_K3_LEN9_0
+u_top_u_conv_slide_conv_slide_instance_4__u_conv_single_slide_clk_gate_data_reg_0_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_conv_single_slide_DATA_WIDTH5_K3_LEN9_0_1
+u_top_u_conv_top_clk_gate_conv_cnt_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6_0
+u_top_u_conv_top_clk_gate_fc_cnt_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_conv_top_CONV_DATA_WIDTH1_FC_DATA_WIDTH5_K4_LOGK4_CH_NUM6_1
+u_top_u_data                       62350.5788     13.8  14076.2498   45700.3002       0.0000  data
+u_top_u_data/clk_gate_conv_weight_buffer_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_1
+u_top_u_data/clk_gate_conv_weight_buffer_reg_0
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_71
+u_top_u_data/clk_gate_conv_weight_buffer_reg_1
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_70
+u_top_u_data/clk_gate_conv_weight_buffer_reg_2
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_69
+u_top_u_data/clk_gate_conv_weight_buffer_reg_3
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_68
+u_top_u_data/clk_gate_conv_weight_buffer_reg_4
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_67
+u_top_u_data/clk_gate_data_buffer_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_6
+u_top_u_data/clk_gate_data_count_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_3
+u_top_u_data/clk_gate_flag1_reg       35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_5
+u_top_u_data/clk_gate_flag2_reg       35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_4
+u_top_u_data/clk_gate_flag3_reg       35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_2
+u_top_u_data/clk_gate_weight_buffer_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_66
+u_top_u_data/clk_gate_weight_buffer_reg_0
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_65
+u_top_u_data/clk_gate_weight_buffer_reg_1
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_64
+u_top_u_data/clk_gate_weight_buffer_reg_10
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_55
+u_top_u_data/clk_gate_weight_buffer_reg_11
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_54
+u_top_u_data/clk_gate_weight_buffer_reg_12
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_53
+u_top_u_data/clk_gate_weight_buffer_reg_13
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_52
+u_top_u_data/clk_gate_weight_buffer_reg_14
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_51
+u_top_u_data/clk_gate_weight_buffer_reg_15
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_50
+u_top_u_data/clk_gate_weight_buffer_reg_16
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_49
+u_top_u_data/clk_gate_weight_buffer_reg_17
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_48
+u_top_u_data/clk_gate_weight_buffer_reg_18
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_47
+u_top_u_data/clk_gate_weight_buffer_reg_19
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_46
+u_top_u_data/clk_gate_weight_buffer_reg_2
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_63
+u_top_u_data/clk_gate_weight_buffer_reg_20
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_45
+u_top_u_data/clk_gate_weight_buffer_reg_21
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_44
+u_top_u_data/clk_gate_weight_buffer_reg_22
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_43
+u_top_u_data/clk_gate_weight_buffer_reg_23
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_42
+u_top_u_data/clk_gate_weight_buffer_reg_24
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_41
+u_top_u_data/clk_gate_weight_buffer_reg_25
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_40
+u_top_u_data/clk_gate_weight_buffer_reg_26
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_39
+u_top_u_data/clk_gate_weight_buffer_reg_27
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_38
+u_top_u_data/clk_gate_weight_buffer_reg_28
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_37
+u_top_u_data/clk_gate_weight_buffer_reg_29
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_36
+u_top_u_data/clk_gate_weight_buffer_reg_3
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_62
+u_top_u_data/clk_gate_weight_buffer_reg_30
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_35
+u_top_u_data/clk_gate_weight_buffer_reg_31
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_34
+u_top_u_data/clk_gate_weight_buffer_reg_32
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_33
+u_top_u_data/clk_gate_weight_buffer_reg_33
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_32
+u_top_u_data/clk_gate_weight_buffer_reg_34
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_31
+u_top_u_data/clk_gate_weight_buffer_reg_35
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_30
+u_top_u_data/clk_gate_weight_buffer_reg_36
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_29
+u_top_u_data/clk_gate_weight_buffer_reg_37
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_28
+u_top_u_data/clk_gate_weight_buffer_reg_38
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_27
+u_top_u_data/clk_gate_weight_buffer_reg_39
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_26
+u_top_u_data/clk_gate_weight_buffer_reg_4
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_61
+u_top_u_data/clk_gate_weight_buffer_reg_40
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_25
+u_top_u_data/clk_gate_weight_buffer_reg_41
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_24
+u_top_u_data/clk_gate_weight_buffer_reg_42
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_23
+u_top_u_data/clk_gate_weight_buffer_reg_43
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_22
+u_top_u_data/clk_gate_weight_buffer_reg_44
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_21
+u_top_u_data/clk_gate_weight_buffer_reg_45
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_20
+u_top_u_data/clk_gate_weight_buffer_reg_46
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_19
+u_top_u_data/clk_gate_weight_buffer_reg_47
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_18
+u_top_u_data/clk_gate_weight_buffer_reg_48
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_17
+u_top_u_data/clk_gate_weight_buffer_reg_49
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_16
+u_top_u_data/clk_gate_weight_buffer_reg_5
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_60
+u_top_u_data/clk_gate_weight_buffer_reg_50
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_15
+u_top_u_data/clk_gate_weight_buffer_reg_51
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_14
+u_top_u_data/clk_gate_weight_buffer_reg_52
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_13
+u_top_u_data/clk_gate_weight_buffer_reg_53
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_12
+u_top_u_data/clk_gate_weight_buffer_reg_54
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_11
+u_top_u_data/clk_gate_weight_buffer_reg_55
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_10
+u_top_u_data/clk_gate_weight_buffer_reg_56
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_9
+u_top_u_data/clk_gate_weight_buffer_reg_57
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_8
+u_top_u_data/clk_gate_weight_buffer_reg_58
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_7
+u_top_u_data/clk_gate_weight_buffer_reg_6
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_59
+u_top_u_data/clk_gate_weight_buffer_reg_7
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_58
+u_top_u_data/clk_gate_weight_buffer_reg_8
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_57
+u_top_u_data/clk_gate_weight_buffer_reg_9
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_56
+u_top_u_data/clk_gate_weight_count_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_data_0
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_0_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_1
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_10_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_11
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_11_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_12
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_12_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_13
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_13_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_14
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_14_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_15
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_15_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_16
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_1_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_2
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_2_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_3
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_3_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_4
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_4_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_5
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_5_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_6
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_6_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_7
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_7_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_8
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_8_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_9
+u_top_u_pool_top_storage_inst_clk_gate_memory_5_reg_reg_9_
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_10
+u_top_u_pool_top_storage_inst_clk_gate_write_address_reg
+                                      35.7504      0.0      0.0000      35.7504       0.0000  SNPS_CLOCK_GATE_HIGH_storage_layer_DATA_WIDTH5_NUM_ELEMENTS16_0
+--------------------------------  -----------  -------  ----------  -----------  -----------  --------------------------------------------------------------------------------
+Total                                                   67425.2556  127647.7424  255360.0000
+
+1

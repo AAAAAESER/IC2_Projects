@@ -1,0 +1,106 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 2548 571 223 286
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / -i 0 "" "/mnt/e/Desktop/IC2/conv/sim_output_pluson.fsdb"
+
+openDirFile -d / -i 1 "" "/mnt/e/Desktop/IC2/conv/novas.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; active file:
+activeDirFile "" "/mnt/e/Desktop/IC2/conv/novas.fsdb"
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 10891462.500000 18959212.500000
+cursor 1391000.000000
+marker 4590000.000000
+
+; visible top row signal index
+top 1
+; marker line index
+markerPos 47
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/mnt/e/Desktop/IC2/conv/sim_output_pluson.fsdb"
+addSignal -h 15 /top_tb/dut/out_en_port
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope in_ready_port
+addSignal -h 15 -holdScope in_valid_port
+addSignal -h 15 -holdScope data2conv_valid
+addSignal -h 15 -holdScope conv2slide_valid
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[29:24]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[23:18]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[17:12]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[11:6]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[5:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[29:24]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[23:18]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[17:12]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[11:6]
+addSignal -h 15 -UNSIGNED -BIN -holdScope data_conv2slide[5:0]
+addSignal -h 15 -holdScope data_in2conv[15:0]
+addSignal -h 15 -holdScope data_in[3:0]
+addSignal -h 15 -holdScope data_in_port[11:0]
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope slilde2pool_valid
+addSignal -h 15 -holdScope data_slide2pool[269:216]
+addSignal -h 15 -holdScope data_slide2pool[215:162]
+addSignal -h 15 -holdScope data_slide2pool[161:108]
+addSignal -h 15 -holdScope data_slide2pool[107:54]
+addSignal -expanded -c ID_YELLOW5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope data_slide2pool[53:0]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[53:48]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[47:42]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[41:36]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[35:30]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[29:24]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[23:18]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[17:12]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[11:6]
+addSignal -c ID_GREEN6 -ls solid -lw 1 -h 15 -UNSIGNED -BIN -holdScope data_slide2pool[5:0]
+addSignal -h 15 -holdScope fc2out_valid
+addSignal -h 15 -holdScope mode_port
+addSignal -h 15 -holdScope rst_n
+addSignal -expanded -h 15 -UNSIGNED -HEX -holdScope weight[95:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[95:80]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[79:64]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[63:48]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[47:32]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[31:16]
+addSignal -h 15 -UNSIGNED -BIN -holdScope weight[15:0]
+addSignal -h 15 -holdScope weight_req
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
+activeDirFile "" "/mnt/e/Desktop/IC2/conv/novas.fsdb"
+
+
